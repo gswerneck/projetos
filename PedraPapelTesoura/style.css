@@ -1,0 +1,90 @@
+:root{
+  font-size: 62.5%; /* 1rem -> 10px */
+  --azul-escuro-forte: #17223B;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--azul-escuro-forte);
+  color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.escolha {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: .5rem;
+  text-align: center;
+}
+
+.escolha h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.escolhas {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.emoji{
+  font-size: 10rem;
+  cursor: pointer;
+  transition: all .4s ease;
+  border: none;
+  background-color: transparent;
+}
+
+.emoji:hover {
+  font-size: 12rem;
+  transform: translateY(-15px);
+}
+
+.resultado {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.resultado-geral {
+  display: flex;
+  align-items: flex-end;
+  justify-items: center;
+  margin: 4rem;
+  font-size: 2rem;
+}
+
+.resultado-geral p {
+  font-size: 3rem;
+}
+
+.resultado-placar{
+  margin-left: .8rem;
+  font-size: 1.5rem;
+}
+
+.resultado-final {
+  font-size: 3rem;
+  opacity: .5;
+}
+
+.resultado-final.vencedor{
+  font-size: 3.5rem;
+  opacity: 1;
+}

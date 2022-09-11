@@ -1,0 +1,39 @@
+.resultado {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, .9);
+}
+
+.mensagem-final {
+  font-size: 8rem;
+}
+
+.resultado button {
+  background-color: var(--azul-claro-fraco);
+  border: none;
+  color: var(--azul-escuro-forte);
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  transition: all .5s ease;
+}
+
+.resultado button:hover{
+  background-color: var(--azul-escuro-forte);
+  color: var(--azul-claro-fraco);
+}
+
+.mostrar {
+  display: flex;
+}

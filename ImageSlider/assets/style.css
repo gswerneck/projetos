@@ -1,0 +1,75 @@
+:root{
+  font-size: 62.5%;
+  --azul-escuro-forte: #17223B;
+  --azul-escuro-medio: #263859;
+  --azul-claro-forte: #0066FF;
+  --azul-claro-medio: #5094FF;
+  --azul-claro-fraco: #90bdff;
+  --salmao: #FF6768;
+  --cinza-azul: #6B778D;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background: var(--azul-escuro-forte);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin-bottom: 2rem;
+  color: whitesmoke;
+  text-shadow: 0 0 2.5rem var(--azul-claro-medio);
+  letter-spacing: .25rem;
+  font-size: 2rem;
+}
+
+.container {
+  width: 80rem;
+  height: 50rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.imagens{
+  width: 500%;
+  height: 50rem;
+  display: flex;
+  transform: translateX(-240rem);
+}
+
+.imagens img {
+  width: 80rem;
+  height: 50rem;
+}
+
+.botoes {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.botoes button {
+  background-color: var(--azul-escuro-medio);
+  color: whitesmoke;
+  text-transform: uppercase;
+  border: none;
+  padding: 1.2rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.botoes button:hover{
+  background-color: var(--azul-claro-medio);
+  box-shadow: 0 0 2.5rem var(--azul-claro-medio);
+}

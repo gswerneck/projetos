@@ -1,0 +1,109 @@
+:root{
+  font-size: 62.5%; /* 1rem -> 10px */
+  --azul-escuro-forte: #17223B;
+  --azul-escuro-medio: #263859;
+  --azul-claro-forte: #0066FF;
+  --azul-claro-medio: #5094FF;
+  --azul-claro-fraco: #90bdff;
+  --laranja: #e5633b;
+  --cinza-azul: #6B778D;
+  --cor-fonte: #EFF2F1;
+  --fonte: 'Poppins', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--azul-escuro-forte);
+  color: whitesmoke;
+  font-size: 2rem;
+  font-family: var(--fonte);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-btn {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
+}
+
+.container-jogador {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.jogador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem;
+  font-size: 8rem;
+  padding: 1rem;
+
+  height: 30rem;
+  width: 30rem;
+}
+
+.btn {
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: var(--azul-escuro-medio);
+}
+
+.esquerda {
+  background-color: var(--laranja);
+  box-shadow: 0 0 1.5rem var(--laranja);
+}
+
+.direita {
+  background-color: var(--azul-claro-forte);
+  box-shadow: 0 0 1.5rem var(--azul-claro-forte);
+}
+
+.counter {
+  margin: 0;
+}
+
+.versus{
+  margin: 0 4rem;
+}
+
+.versus::before {
+  content: '';
+  position: absolute;
+  width: .75rem;
+  height: 5rem;
+  background-color: white;
+
+  transform: rotate(-45deg);
+}
+
+.versus::after {
+  content: '';
+  position: absolute;
+  width: .75rem;
+  height: 5rem;
+  background-color: white;
+
+  transform: rotate(45deg);
+}

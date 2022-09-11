@@ -1,0 +1,156 @@
+:root{
+  font-size: 62.5%; /* 1rem -> 10px */
+  --azul-escuro-forte: #17223B;
+  --azul-escuro-medio: #263859;
+  --azul-claro-forte: #0066FF;
+  --azul-claro-medio: #5094FF;
+  --azul-claro-fraco: #90bdff;
+  --salmao: #FF6768;
+  --cinza-azul: #6B778D;
+  --fonte: 'Poppins', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--fonte);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--azul-escuro-forte);
+  color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h2 {
+  font-size: 5rem;
+}
+
+.underline{
+  width: 30rem;
+  height: .6rem;
+  background-color: var(--azul-claro-medio);
+}
+
+.container {
+  margin-top: 3rem;
+  width: 75rem;
+  height: 60rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: whitesmoke;
+  color: var(--azul-escuro-forte);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container{
+  height: 15rem;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 1px solid var(--azul-claro-forte)
+}
+
+.img-container img {
+  width: 15rem;
+}
+
+.sessao-titulo-legenda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  font-size: 3rem;
+}
+.categoria {
+  font-size: 2rem;
+  color: var(--azul-claro-forte);
+}
+.descricao {
+  font-size: 1.8rem;
+}
+
+.container-btn {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+
+.btn {
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+  cursor: pointer;
+  color: var(--azul-escuro-medio);
+  transition: all .4s ease;
+  margin: 0 .5rem;
+}
+
+.btn:hover {
+  color: var(--azul-claro-forte);
+}
+
+.random {
+  border: none;
+  background-color: var(--azul-escuro-medio);
+  color: whitesmoke;
+  padding: .5rem;
+  margin-top: .5rem;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .4s ease;
+  grid-column: 1 / 3;
+}
+
+.random:hover {
+  background-color: var(--azul-claro-forte);
+}
+
+.bibliografia {
+  margin-top: 1rem;
+  display: flex;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.bibliografia a {
+  text-decoration: none;
+  color: var(--azul-claro-medio);
+  margin-left: .5rem;
+}
+
+.bibliografia a:hover {
+  color: var(--azul-claro-forte);
+  transform: scale(1.1);
+}

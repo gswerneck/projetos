@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Produtos</title>
+</head>
+<body>
+  
+  <div class="card">
+    <h2>Nike x Travis Scott</h2>
+    <div class="underline"></div>
+  </div>
+  
+  <article class="container">
+    <div class="container-header">
+      <div class="img-container">
+        <img src="assets/fragment-low-travis.png" alt="Dunk Low Travis Scott" id="imagem">
+      </div>
+      <div class="sessao-titulo-legenda">
+        <h3 class="titulo" id="titulo"></h3>
+        <p class="categoria" id="modelo"></p>
+      </div>
+    </div>
+    <p class="descricao" id="descricao"></p>
+    <div class="container-btn">
+      <button class="btn anterior" id="antBtn">
+        <i class="fa-solid fa-circle-left"></i>
+      </button>
+
+      <button class="btn proximo" id="proxBtn">
+        <i class="fa-solid fa-circle-right"></i>
+      </button>
+      
+      <button class="random" id="randomBtn">aleatorio</button>
+    </div>
+  </article>
+  <div class="bibliografia">
+    <p>Fonte dos textos: </p>
+    <a href="http://droper.app">droper</a>
+  </div>
+  
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/99eeabda01.js" crossorigin="anonymous"></script>
+</body>
+</html>

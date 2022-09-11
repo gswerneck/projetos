@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Sound Board</title>
+</head>
+<body>
+  <h2>SOUND BOARD</h2>
+  <!-- key-code: https://www.toptal.com/developers/keycode -->
+  <div class="container">
+    <div data-key="65" class="tecla">
+      <p>A</p>
+      <span>boom</span>
+    </div>
+    <div data-key="83" class="tecla">
+      <p>S</p>
+      <span>clap</span>
+    </div>
+    <div data-key="68" class="tecla">
+      <p>D</p>
+      <span>hihat</span>
+    </div>
+    <div data-key="70" class="tecla">
+      <p>F</p>
+      <span>kick</span>
+    </div>
+    <div data-key="71" class="tecla">
+      <p>G</p>
+      <span>openhat</span>
+    </div>
+    <div data-key="72" class="tecla">
+      <p>H</p>
+      <span>ride</span>
+    </div>
+    <div data-key="74" class="tecla">
+      <p>J</p>
+      <span>snare</span>
+    </div>
+    <div data-key="75" class="tecla">
+      <p>K</p>
+      <span>tink</span>
+    </div>
+    <div data-key="76" class="tecla">
+      <p>L</p>
+      <span>tom</span>
+    </div>
+  </div>
+
+  <audio data-key="65" id="audio" src="audios/boom.wav"></audio>
+  <audio data-key="83" id="audio" src="audios/clap.wav"></audio>
+  <audio data-key="68" id="audio" src="audios/hihat.wav"></audio>
+  <audio data-key="70" id="audio" src="audios/kick.wav"></audio>
+  <audio data-key="71" id="audio" src="audios/openhat.wav"></audio>
+  <audio data-key="72" id="audio" src="audios/ride.wav"></audio>
+  <audio data-key="74" id="audio" src="audios/snare.wav"></audio>
+  <audio data-key="75" id="audio" src="audios/tink.wav"></audio>
+  <audio data-key="76" id="audio" src="audios/tom.wav"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>

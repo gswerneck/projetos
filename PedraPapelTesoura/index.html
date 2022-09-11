@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pedra papel tesoura</title>
+</head>
+<body>
+  <div class="container">
+    <div class="escolha">
+      <h1>Sua escolha</h1>
+      <div class='escolhas'>
+        <button class="emoji" data-selection="pedra">✊</button>
+        <button class="emoji" data-selection="papel">✋</button>
+        <button class="emoji" data-selection="tesoura">✌️</button>
+      </div>
+    </div>
+  </div>
+  <div class="resultado">
+    <div class="resultado-geral">
+      <p>Você</p>
+      <span class="resultado-placar" data-player-score>0</span>
+    </div>
+    <div class="resultado-geral" data-final-column>
+      <p>Computador</p>
+      <span class="resultado-placar" data-computer-score>0</span>
+    </div>
+
+    <!-- <div class="resultado-final vencedor">✊</div>
+    <div class="resultado-final">✊</div> -->
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

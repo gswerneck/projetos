@@ -1,0 +1,44 @@
+:root{
+  font-size: 62.5%;
+  --fonte: 'Roboto', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte);
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.pagina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3rem;
+  color: whitesmoke;
+
+  height: 100vh;
+
+  scroll-snap-align: start;
+}
+
+.primeira {
+  background-color: #2A0944;
+}
+.segunda {
+  background-color: #3FA796;
+}
+.terceira {
+  background-color: #FEC260;
+}
+.quarta {
+  background-color: #A10035;
+}
+

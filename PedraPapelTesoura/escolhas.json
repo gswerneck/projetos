@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "pedra",
+    "vence": "tesoura",
+    "simbolo": "✊"
+  },
+  {
+    "nome": "papel",
+    "vence": "pedra",
+    "simbolo": "✋"
+  },
+  {
+    "nome": "tesoura",
+    "vence": "papel",
+    "simbolo": "✌️"
+  }
+]

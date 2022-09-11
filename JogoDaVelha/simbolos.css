@@ -1,0 +1,67 @@
+/* GERAL */
+
+.celula.xis::after,
+.celula.xis::before,
+.celula.bola::after,
+.celula.bola::before {
+  background-color: var(--azul-claro-fraco);
+}
+
+.tabuleiro.xis .celula:not(.xis):not(.bola):hover::after,
+.tabuleiro.xis .celula:not(.xis):not(.bola):hover::before,
+.tabuleiro.bola .celula:not(.xis):not(.bola):hover::after,
+.tabuleiro.bola .celula:not(.xis):not(.bola):hover::before {
+  background-color: var(--cinza-azul);
+}
+
+
+/* XIS */
+
+.celula.xis::before,
+.tabuleiro.xis .celula:not(.xis):not(.bola):hover::before  {
+  content: '';
+  position: absolute;
+
+  height: var(--tamanho-simbolo);
+  width: calc(var(--tamanho-simbolo) * .15);
+
+  transform: rotate(-45deg);
+}
+
+
+.celula.xis::after,
+.tabuleiro.xis .celula:not(.xis):not(.bola):hover::after{
+  content: '';
+  position: absolute;
+
+  height: var(--tamanho-simbolo);
+  width: calc(var(--tamanho-simbolo) * .15);
+  
+  transform: rotate(45deg);
+}
+
+/* BOLA */
+
+.celula.bola::before,
+.tabuleiro.bola .celula:not(.xis):not(.bola):hover::before {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  
+  height: calc(var(--tamanho-simbolo) * .9);
+  width: calc(var(--tamanho-simbolo) * .9);
+}
+
+.celula.bola::after,
+.tabuleiro.bola .celula:not(.xis):not(.bola):hover::after {
+  content: '';
+  position: absolute;
+  
+  height: calc(var(--tamanho-simbolo) * .6);
+  width: calc(var(--tamanho-simbolo) * .6);
+  
+  background-color: var(--azul-escuro-forte);
+  border-radius: 50%;
+}
+
+
