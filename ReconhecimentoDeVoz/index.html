@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Reconhecimento de fala</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Para interagir com a caixa, clique nela e fale uma das frases abaixo</h2>
+    <h3>É necessário permitir o uso do microfone no site</h3>
+    <button class="box" id="box">Interaja comigo</button>
+    <div class="fala" id="speech">
+    </div>
+    <div class="erro" id="error">
+    </div>
+    <div class="informacoes">
+      <h3>Trocar cor do fundo para... </h3>
+      <h3>Trocar cor da borda para... </h3>
+      <h3>Trocar cor da fonte para... </h3>
+      <h3>Cores possíveis:</h3>
+      <ul class="lista-de-cores">
+        <li>amarelo<span class="amarelo"></span></li>
+        <li>azul<span class="azul"></span></li>
+        <li>branco<span class="branco"></span></li>
+        <li>cinza<span class="cinza"></span></li>
+        <li>laranja<span class="laranja"></span></li>
+        <li>rosa<span class="rosa"></span></li>
+        <li>verde<span class="verde"></span></li>
+        <li>vermelho<span class="vermelho"></span></li>
+      </ul>
+      
+    </div>
+  </div>
+
+  <script src="reconhecimentoDeVoz.js"></script>
+  <script src="app.js"></script>
+  <script src="validacao.js"></script>
+</body>
+</html>

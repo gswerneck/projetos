@@ -1,0 +1,139 @@
+:root{
+  font-size: 62.5%; /* 1rem -> 10px */
+  --azul-escuro-forte: #17223B;
+  --azul-escuro-medio: #263859;
+  --azul: #0066FF;
+  --cinza: #6B778D;
+  --vermelho: #D2001A;
+  --rosa: #F07DEA;
+  --laranja: #FF7F3F;
+  --verde: #42855B;
+  --amarelo: #FBDF07;
+  --branco: whitesmoke;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--azul-escuro-forte);
+  color: whitesmoke;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.box {
+  padding: 5rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  background-color: var(--azul-escuro-medio);
+  cursor: pointer;
+  height: 20rem;
+  width: 70rem;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fala {
+  font-size: 2rem;
+  display: none;
+    gap: 1rem;
+}
+
+.fala .frase {
+  color: var(--cinza);
+}
+
+.erro {
+  font-size: 1.5rem;
+  color: var(--vermelho);
+  display: none;
+}
+
+.informacoes {
+  width: 70rem;
+  display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.informacoes h3 {
+  font-size: 2rem;
+}
+
+.lista-de-cores {
+  list-style: none;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+}
+
+.lista-de-cores li {
+  margin: 0rem 3rem 3rem 3rem;
+}
+
+.lista-de-cores li span {
+  position: absolute;
+  content: '';
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.azul {
+  background-color: var(--azul);
+}
+
+.branco {
+  background-color: var(--branco);
+}
+
+.vermelho {
+  background-color: var(--vermelho);
+}
+
+.cinza {
+  background-color: var(--cinza);
+}
+
+.laranja {
+  background-color: var(--laranja);
+}
+
+.rosa {
+  background-color: var(--rosa);
+}
+
+.verde {
+  background-color: var(--verde);
+}
+
+.amarelo {
+  background-color: var(--amarelo);
+}
